@@ -1,0 +1,5 @@
+n is Achilles if n = p1^n1 p2^n2 ... pl^nk, n1, n2, ... nk >= 2, 
+in n1, n2 .. nk at least one is odd.
+
+phi(n) = (n1-1)p1^(n1-1) * (n2-1)p2^(n2-1) ... (nk-1)pk^(nk-1) = 
+       = n (1-1/p1)(1-1/p2)(1-1/p3) ... (1-1/pk)
