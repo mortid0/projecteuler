@@ -9,14 +9,14 @@ let ratio_sqrt n =
 	let s = num_of_int n in
 	if (s -/ !x */ !x >/ (num_of_int 0))
 		then (
-			for i = 1 to 9 do
+			for i = 1 to 8 do
 				x := iter_ratio_sqrt !x s;
 			done;)
 		else (x := (num_of_int 1););
 	!x;;
 
 let sum_100_digits n = 
-	let str = approx_num_fix 105 (ratio_sqrt n) in
+	let str = approx_num_fix 1005 (ratio_sqrt n) in
 	let s = ref ((int_of_char (str.[1])) - (int_of_char '0'))  in
 	for i = 3 to 101  do
 		let c = (int_of_char (str.[i])) - (int_of_char '0') in
