@@ -32,3 +32,4 @@ let _ =
 			else s := !s
 	done;
 	Printf.printf "Total %i\n" !s;;
+
